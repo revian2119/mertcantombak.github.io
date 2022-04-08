@@ -1,0 +1,276 @@
+<!--Mertcan Tombak - 170419036-->
+<!--Tum haklari saklidir-->
+<!--Iletisim icin revian.mc@gmail.com-->
+<!--Bircok stil ve medya ozelligi W3.CSS ve style.css icinde olusturulan hazir yapilar kullanilarak classlar icerisinde yapilmistir-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mertcan Tombak</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat fontunu kullaniyorum-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>   
+    <section>
+      <!--Mobil icin navigasyon bar-->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">Öz Geçmiş</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">HAKKIMDA</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">KARİYER</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">İLETİŞİM</a>
+      </div>
+
+      <!--Avatar ve sosyal alan-->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--Avatar-->
+        <img src="profilephoto0.jpeg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <!--Sosyal ag butonlari-->
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://github.com/revian2119" target="_blank">
+              <i data-feather="github"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.instagram.com/nnctrm/" target="_blank">
+             <i data-feather="instagram"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://twitter.com/nnctrm" target="_blank">
+             <i data-feather="twitter"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="mailto:revian2119@gmail.com" target="_blank">
+             <i data-feather="mail"></i>
+          </a>
+        </div>
+        <!--Teknolojiler bolumu-->
+        <div class="w3-container w3-margin-top w3-padding-10 w3-text-white">
+          <h4><b>Teknolojiler</b></h4>
+          <span class="w3-padding-small w3-xlarge">
+            <i class="fab fa-brands fa-java w3-margin-right"></i>Java</span>
+          <br><span class="w3-padding-small w3-xlarge">
+            <i class="fab fa-brands fa-python w3-margin-right"></i>Python</span>
+          <br><span class="w3-padding-small w3-xlarge">
+            <i class="fab fa-brands fa-html5 w3-margin-right"></i>HTML</span>
+          <br><span class="w3-padding-small w3-xlarge">
+            <i class="fa fa-solid fa-database w3-margin-right"></i>SQL</span>
+          <br><span class="w3-padding-small w3-xlarge">
+            <i class="fa fa-solid fa-cube w3-margin-right"></i>Unity</span>
+        </div>
+        <!--CV indirme butonu-->
+        <div class="w3-container w3-margin-top w3-padding-16">
+          <a href="./resume.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">CV Görüntüle</span>
+          </a>
+        </div>
+      </section>
+
+      <!--CV icerikleri-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--Navigasyon bar-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">ÖZ GEÇMİŞ</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">İLETİŞİM</a>
+          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">KARİYER</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">HAKKIMDA</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--Giris bolumu-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <p style="font-style: italic; font-size:x-large;">"Evren hakkındaki en dehşet verici şey onun bize düşman değil kayıtsız oluşudur."</p>
+            <p style="font-style: italic; font-size:large;">- Stanley Kubrick</p>
+            <h1>Mertcan Tombak</h2>
+            <h2>Bilgisayar Mühendisliği Öğrencisi</h3>
+            <p></p>
+          </div>
+
+          <!--Hakkimda kismi-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">HAKKIMDA</h2>
+            <p class="w3-margin-top-2" style="text-align: justify"> 
+              Merhabalar, ben Mertcan. 21 yaşında Bilgisayar Mühendisliği 3. sınıf öğrencisiyim.
+               Eğitimime şuan itibariyle İstanbul'da Marmara Üniversitesi'nde devam etmekteyim.
+               Küçüklüğümden beri bilgisayar ile içli dışlı olduğumdan, bilgisayar mühendisliği bölümünü
+               lise yıllarımda kendime yakın gördüm. Şuan ise bunun doğru bir karar olduğunu düşünmekteyim.                              
+            </p>
+            <p class="" style="text-align: justify"> 
+              Başladığım bir işi bitirmek veya sonuna kadar götürmek konusuna özen gösteririm.
+               Çalışma ortamında düzenli olmasına ve sürecin titiz bir şekilde ilerlemesine önem veririm.
+               Bilgi edinmek ve yeni bir şeyler öğrenmek, bilim ve teknoloji alanında gerçekleşen olayları takip etmekten zevk alırım.
+               Bir konuya hakim olup, diğer konular hakkında fikir sahibi olacak yeterliliğe sahip bir birey olmayı hedeflerim.
+               Prensiplerime uygun hareket etmeyi ve birçok konuda taviz vermemeyi doğru bulurum.
+            </p>
+            <p class="" style= "text-align: justify"> 
+              Geleceğe yönelik birkaç farklı kariyer planım var. 
+               Bunlardan birkaçı kendi şirketimi kurup, uygulamalar çıkararak birkaç farklı alanda kendimi ileriye taşımak istiyorum. 
+               Bir diğer düşüncem ise kendimi geliştirip, gerekli tecrübeyi edinmek ve sosyal ağımı genişletmek için
+               birkaç farklı konumda çalışmak istiyorum. Bu sayede ileride kendi ayakları üzerinde durabilen başarılı
+               bir mühendis olmayı hedefliyorum. Bu hedeflere ulaştıktan sonra ise sıra hayallerim için daha büyük adımlar atmakta...
+            </p>            
+          </div>
+
+          <!--Kariyer bolumu-->
+          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">KARİYER</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <!--Is tecrubeleri bolumu-->
+              <h3 class="w3-border-amber w3-border-bottom" style="border-width: 3px !important;">İŞ TECRÜBELERİ</h3>
+              <div class="w3-margin-left">
+                <h4>Stajyer - İLBANK A.Ş.</h4>                
+                <p><i class="fa fa-calendar fa-fw w3-margin-right"></i>Temmuz 2021 - Eylül - 2021</p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Staj sürecimde Flutter ile bir mobil bütçe takip uygulaması geliştirdim.</li>
+                  <li>Büyük bir kuruluşun ağ yapısı, veri tabanı, sunucu yerleşimi ve genel düzeni hakkında bilgi sahibi oldum.</li>
+                  <li>Bilgisayar donanımları ve özellikle HDD yapısını yakından inceleme fırsatı bulurken, 
+                    sunucu ve kişisel bilgisayarlarda kullanılmış birçok HDD'in imha işlemini gerçekleştirdim.</li>
+                  <li>Bilgisayar ağı ve masaüstü sanallaştırma mimarisi hakkında bilgi sahibi oldum.</li>
+                </ul>
+              </div>
+              <!--Projeler bolumu-->
+              <h3 class="w3-border-amber w3-border-bottom" style="border-width: 3px !important;">PROJELER</h3>
+              <div class="w3-margin-left">
+                <h5><b>Endless Runner Oyunu</b></h5>                
+                <ul class="w3-ul" style="font-weight: 500;">
+                    <li><i class="fa fa-cube w3-margin-right"></i>Platform: Unity, Visual Studo</li>
+                    <li><i class="fa fa-code w3-margin-right"></i>Geliştirme: C#, Unity Bileşenleri, Blender</li>
+                </ul>
+                <h5><b>Mobil Bütçe Takip Uygulaması</b></h5>                
+                <ul class="w3-ul" style="font-weight: 500;">
+                    <li><i class="fa fa-cube w3-margin-right"></i>Platform: Visual Studio Code, Flutter</li>
+                    <li><i class="fa fa-code w3-margin-right"></i>Geliştirme: Dart</li>
+                </ul>
+                <h5><b>Elindekilerle Hobi Web Sitesi</b></h5>                
+                <ul class="w3-ul" style="font-weight: 500;">
+                    <li><i class="fa fa-cube w3-margin-right"></i>Platform: PyCharm IDE</li>
+                    <li><i class="fa fa-code w3-margin-right"></i>Geliştirme: Python, Django, SQLite, HTML, CSS, JS, Bootstrap</li>
+                </ul>
+                <h5><b>CV Oluşturma Masaüstü Uygulaması</b></h5>                
+                <ul class="w3-ul" style="font-weight: 500;">
+                    <li><i class="fa fa-cube w3-margin-right"></i>Platform: NetBeans</li>
+                    <li><i class="fa fa-code w3-margin-right"></i>Geliştirme: Java, JavaFX, JavaDB</li>
+                </ul>
+                <h5><b>Travelore Seyahat Planlama Mobil Uygulaması</b></h5>                
+                <ul class="w3-ul" style="font-weight: 500;">
+                    <li><i class="fa fa-cube w3-margin-right"></i>Platform: Android Studio</li>
+                    <li><i class="fa fa-code w3-margin-right"></i>Geliştirme: Java, Firebase Hizmetleri</li>
+                </ul>
+                <h5><b>LAN Multiplayer Platform Oyunu</b></h5>                
+                <ul class="w3-ul" style="font-weight: 500;">
+                    <li><i class="fa fa-cube w3-margin-right"></i>Platform: Godot</li>
+                    <li><i class="fa fa-code w3-margin-right"></i>Geliştirme: Godot Game Engine, GDScript</li>
+                </ul>
+                <h5><b>Masaüstü Stok Takip Uygulaması</b></h5>                
+                <ul class="w3-ul" style="font-weight: 500;">
+                    <li><i class="fa fa-cube w3-margin-right"></i>Platform: Visual Studio - Windows Form Application</li>
+                    <li><i class="fa fa-code w3-margin-right"></i>Geliştirme: C#, .Net Framework, MS-SQL</li>
+                </ul>
+                <h5><b>Hand Gesture ile Oyun Kontrolü Programı</b></h5>                
+                <ul class="w3-ul" style="font-weight: 500;">
+                    <li><i class="fa fa-cube w3-margin-right"></i>Platform: PyCharm - Unity Oyuna Entregre</li>
+                    <li><i class="fa fa-code w3-margin-right"></i>Geliştirme: Python, OpenCV2 ve Mediapipe kütüphaneleri</li>
+                </ul>
+              </div>
+            </div>            
+            <!---Egitim bolumu-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber w3-border-bottom" style="border-width: 3px !important;">EĞİTİM</h3>
+              <div class="w3-margin-left">
+                <h4>Lisans, Bilgisayar Mühendisliği - Marmara Üniversitesi, İstanbul</h4>
+                <p><i class="fa fa-calendar fa-fw w3-margin-right"></i>Eylül 2019 - Devam Ediyor </p>
+                <h4>Ortaöğretim, Bekir Gökdağ Anadolu Lisesi, Ankara</h4>
+                <p><i class="fa fa-calendar fa-fw w3-margin-right"></i>Eylül 2015 - Haziran 2019 </p>
+              </div>
+            </div>
+            <!---Kurslar bolumu-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber w3-border-bottom" style="border-width: 3px !important;">KURSLAR ve GELİŞİM</h3>
+              <div class="w3-margin-left">
+                <h4>Python - Django Framework Kursu</h4>
+                <a href="https://youtube.com/playlist?list=PLPrHLaayVkhny4WRNp05C1qRl1Aq3Wswh" target="_blank"><i class="fa fa-external-link fa-fw w3-margin-right"></i>İlgili Bağlantı</p></a>
+                <h4>Java - Android Studio Uygulama Geliştirme</h4>
+                <a href="https://developer.android.com/guide" target="_blank"><i class="fa fa-external-link fa-fw w3-margin-right"></i>İlgili Bağlantı</p></a>
+                <h4>Flutter - Mobil Uygulama Geliştirme</h4>
+                <a href="https://www.udemy.com/course/sifirdan-flutter-ile-android-ve-ios-apps-development/" target="_blank"><i class="fa fa-external-link fa-fw w3-margin-right"></i>İlgili Bağlantı</p></a>
+                <h4>C# - Unity Oyun Geliştirme</h4>
+                <a href="https://www.btkakademi.gov.tr/portal/course/unity-ile-egitici-oyunlar-5522" target="_blank"><i class="fa fa-external-link fa-fw w3-margin-right"></i>İlgili Bağlantı</p></a>
+              </div>                
+            </div>
+            <!--Beceriler bolumu-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">BECERİLER</h3>
+              <div class="w3-margin-left">
+                <!--Sosyal beceriler-->
+                <h4>Sosyal Beceriler</h4>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Takım içerisindeki konumuma uygun şekilde ilgili görevleri yerine getirebilirim.</li>
+                  <li>Bulunduğum ortamdaki eksiklikleri ve dezavantajlı durumları tespit ederek avantajlı hale getirmek için çalışırım.</li>
+                  <li>Takım çalışmalarında liderlik edebilir ve sorumluluk alabilirim.</li>
+                </ul>
+                <!--Teknik beceriler-->
+                <h4>Teknik Beceriler</h4>
+                  <ul class="w3-ul" style="font-weight: 500;">
+                    <li>İlişkisel Veri Tabanı ve SQL kullanımı ile ilgili bilgi sahibiyim.</li>
+                    <li>C# ve oyun geliştirme konusunda çalışmalar yapmaktayım.</li>
+                    <li>C, Java, Python programlama dillerine orda düzeyde hakimim.</li>
+                    <li>RPG, MMO, Sandbox gibi birçok oyun kategorisinde bölüm tasarımı, mekanikler, oynayış ve atmosfer hakkında bilgi sahibiyim.</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <!--Ilgi alanlari bolumu-->
+          <div class=" w3-container w3-margin-top-2 w3-cursive w3-margin-left">
+            <h3 class="w3-border-amber w3-border-bottom" style="border-width: 3px !important;">HOBİLER ve İLGİ ALANLARIM</h3>
+            <ul class="w3-ul w3-margin-left" style="font-weight: 500;">
+              <li>Hikaye yazma ve evren tasarlamaya zaman ayırıyor ve ilgi duyuyorum.</li>
+              <li>Oyun oynama, inceleme ve geliştirme ile ilgileniyorum.</li>
+              <li>Fantastik, bilim-kurgu alanlarındaki film ve dizileri izlemeyi seviyorum.</li>
+              <li>Vücut geliştirme ve Calisthenics ile ilgileniyorum.</li>
+              <li>Epik, atmosferik ve klasik müzik dinlemekten hoşlanırım.</li>
+            </ul>
+          </div>
+          <!--Referanslar bolumu
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">REFERANSLARIM</h3>
+              <h4>Margaret Johnson, Manager at Company-Y</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>+9876543210</li>
+                <li>mjohnson@companyy.com</li>
+              </ul>
+            </div>            
+          </div>
+          -->
+
+          <!--Iletisim bolumu-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">İLETİŞİM</h3>
+            <div class="w3-margin-top-2 w3-margin-left" style="font-weight: 500;">
+              <p>İsim: Mertcan TOMBAK</p>
+              <p>Adres: Zümrütevler Mahallesi, Emek Caddesi, No: 91, Mimar Sinan Öğrenci Yurdu. Maltepe/İSTANBUL</p>
+              <p>Telefon Numarası: +905387965555</p>
+              <p>E-mail: revian2119@gmail.com</p>
+            </div>
+          </div>
+
+        <!--Footer kismi-->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p> 2022 - Mertcan Tombak</p>
+           <p class="w3-small">Bu web sitesinin tüm hakları saklıdır.<i class="fa fa-solid fa-copyright w3-margin-left"></i></p>
+        </footer>
+      </section>      
+    </section>
+  </body>
+</html>
