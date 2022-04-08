@@ -25,12 +25,12 @@ body * {
   
   .image-section {
     height: 100vh;
-    -moz-text-align: center; /*works on Firefox */
-    -webkit-text-align: center; /*works on Safari and Google Chrome*/
+    -moz-text-align: center; /*Firefox icin */
+    -webkit-text-align: center; /*Safari ve Chrome icin*/
     text-align: center;
     background-color: #262626;
-    -moz-padding: 20px; /*works on Firefox */
-    -webkit-padding: 20px; /*works on Safari and Google Chrome*/
+    -moz-padding: 20px; /*Firefox icin */
+    -webkit-padding: 20px; /*Safari ve Chrome icin*/
     padding: 20px;
   }
   
